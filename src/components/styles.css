@@ -1,0 +1,312 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+    color: #495057;
+    font-family: "Open Sans";
+    line-height: 1;
+  }
+  
+  /* ========== DEMO STYLES ========== */
+  @font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Open Sans"), local("OpenSans"),
+      url(http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff)
+        format("woff");
+  }
+  
+  /* ===== Demo Styles ===== */
+  .App {
+    background: #e5fffd;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+  }
+  
+  .infobox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .App input[type="text"],
+  .App input[type="date"],
+  .App select {
+    padding: 15px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    display: inline-block;
+    min-width: 220px;
+    font-family: "Open Sans";
+    font-size: 1em;
+    background: #fff !important;
+  }
+  .App select {
+    min-width: 240px;
+  }
+  .App input[type="date"] {
+    min-width: 220px;
+    resize: none;
+  }
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  .App input[type="submit"] {
+    background-color: #2196f8 !important;
+    color: white;
+    padding: 15px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    min-width: 240px;
+  }
+  
+  .App input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    /* background-color: #f2f2f2; */
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    display: block;
+  }
+  .col-50 {
+    float: left;
+    width: 50%;
+    display: inline-block;
+  }
+  .col-75 {
+    float: left;
+    width: 75%;
+    display: inline-block;
+  }
+  
+  .col-100 {
+    width: 100%;
+    display: inline-block;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .App .col-100,
+  .App .col-50,
+  .App .col-25,
+  .App .col-75 {
+    margin-top: 6px;
+  }
+  
+  label.badge {
+    border: solid 1px #fff;
+    border-radius: 12px;
+    padding: 5px 15px;
+    margin: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    width: 82px;
+  }
+  input[disabled] {
+    cursor: not-allowed;
+  }
+  label.badge:hover {
+    background: #2196f8;
+    border-color: #2196f8;
+    color: #fff;
+  }
+  
+  label.active {
+    background: #2196f8;
+    border-color: #2196f8;
+    color: #fff;
+  }
+  
+  .container.flight-lists {
+    background: #eee;
+    width: 100%;
+    height: 100% !important;
+    min-height: 700px;
+    margin: 0;
+    padding: 0;
+    font-size: 0.94em;
+    color: #495057;
+  }
+  
+  .container.flight-lists .filter {
+    background: #fff;
+    padding: 10px 5px;
+    height: 97.5vh;
+  }
+  
+  .container.flight-lists .filter .accordion-menu {
+    padding: 10px 5px;
+  }
+  
+  .container.flight-lists .filter .accordion-menu .title {
+    padding: 10px 5px;
+    border-bottom: solid 1px #e2e2e2;
+    font-weight: bold;
+  }
+  .container.flight-lists .filter .accordion-menu ul {
+    padding: 5px 0px;
+  }
+  .container.flight-lists .filter .accordion-menu li {
+    padding: 5px;
+  }
+  
+  .container.flight-lists .filter .accordion-menu .price {
+    padding: 10px 5px;
+  }
+  .container.flight-lists .filter .accordion-menu .price small {
+    padding: 20px 0px;
+    display: inline-block;
+  }
+  
+  .container.flight-lists .filter .accordion-menu .price-slider {
+    position: relative;
+  }
+  .container.flight-lists .filter .accordion-menu .price-slider .max {
+    position: absolute;
+    right: 0;
+  }
+  .container.flight-lists .filter .accordion-menu .price-slider .min {
+    position: absolute;
+    left: 0;
+  }
+  
+  .container.flight-lists .filter .accordion-menu .price-slider input {
+    width: 100%;
+  }
+  
+  .container.flight-lists .lists {
+    padding: 15px;
+  }
+  
+  .divider {
+    border-bottom: 1px solid #e2e2e2;
+  }
+  
+  .container.flight-lists .lists .title {
+    padding: 10px 5px;
+    font-weight: bold;
+  }
+  
+  .container.flight-lists .lists .subtitle {
+    font-weight: 100;
+    padding: 10px 5px;
+    font-size: 0.9em;
+  }
+  .container.flight-lists .lists ul li .list {
+    display: flex; /* or inline-flex */
+    flex-wrap: nowrap;
+    background: #fff;
+    margin: 3px auto;
+    padding: 15px 10px;
+  }
+  
+  .container.flight-lists .lists ul li .list.head {
+    background: #dee2e6;
+    font-weight: bold;
+    color: #495057;
+  }
+  .container.flight-lists .lists ul li .list .item {
+    flex: 1 1;
+  }
+  
+  .col-15 {
+    float: left;
+    width: 15%;
+    display: inline-block;
+  }
+  .col-85 {
+    float: left;
+    width: 85%;
+    display: inline-block;
+  }
+  
+  .container.flight-lists .head {
+    background: #fff;
+    padding: 15px;
+    /*margin:15px;*/
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    .col-50,
+    .col-15,
+    .col-85 {
+      width: 100%;
+      margin-top: 0;
+      display: block;
+    }
+  
+    .App input {
+      width: 90%;
+    }
+    .App select,
+    input[type="submit"] {
+      width: 99%;
+    }
+    .App input[type="date"] {
+      width: 90%;
+    }
+    .App {
+      height: 114vh;
+    }
+  
+    .container.flight-lists .filter {
+      height: auto;
+    }
+  }
+  
+  .container.flight-lists .lists .search {
+    background: #fff;
+    border-color: #eee;
+    border-radius: 4px;
+    padding: 15px 0px;
+  }
+  .container.flight-lists .lists .search .item {
+    display: inline-block;
+    margin: 5px;
+    border-right: solid 2px #eee;
+  }
+  .container.flight-lists .lists .search .title {
+    font-weight: bold;
+    padding: 5px;
+  }
+  .container.flight-lists .lists .search .subtitle {
+    font-weight: 100;
+    padding: 5px;
+    font-size: 0.9em;
+  }
+  
